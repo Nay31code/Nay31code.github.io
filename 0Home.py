@@ -7,6 +7,7 @@ st.set_page_config(
     page_icon="🌊", 
     layout="wide", 
 )
+bin_file = 'C:\\Users\\A_R_T\\Desktop\\Projec ed\\water-texture-background-pastel-blue-design.jpg'
 #set background 
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:

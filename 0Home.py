@@ -1,13 +1,15 @@
 import streamlit as st
 from PIL import Image
 import base64
+import io
+
 #set icon 
 st.set_page_config(
     page_title="Waste water predictor",
     page_icon="🌊", 
     layout="wide", 
 )
-bin_file = 'C:\\Users\\A_R_T\\Desktop\\Projec ed\\water-texture-background-pastel-blue-design.jpg'
+
 #set background 
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
@@ -30,13 +32,9 @@ def set_background(png_file):
 
 image_path = 'C:\\Users\\A_R_T\\Desktop\\Projec ed\\water-texture-background-pastel-blue-design.jpg'
 
-
-
-
-
-
 set_background(image_path)
-# set titile 
+
+# set title 
 st.markdown(
     """
     <style>
@@ -49,6 +47,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 # ใส่ content ใน div ที่มี class centered-title
 st.markdown("<h1 style='text-align: center; color: white; font-size: 60px;'>Aqua Predictor</h1>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: white; font-size: 40px;'>This web application can show retrospective data and can predict this data</h1>", unsafe_allow_html=True)

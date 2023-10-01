@@ -30,6 +30,7 @@ image_path = 'C:\\Users\\A_R_T\\Desktop\\Projec ed\\bg.jpg'
 
 
 
+
 set_background(image_path)
 # set titile 
 st.markdown(

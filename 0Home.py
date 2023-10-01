@@ -25,7 +25,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True) 
 
-image_path = 'C:\\Users\\A_R_T\\Desktop\\Projec ed\\water-texture-background-pastel-blue-design.jpg - Shortcut.lnk'
+image_path = 'C:\Users\A_R_T\Desktop\Projec ed\water-texture-background-pastel-blue-design.jpg'
 
 
 

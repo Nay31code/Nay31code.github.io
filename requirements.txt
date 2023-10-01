@@ -1,8 +1,5 @@
 streamlit
-base64
-PIL
+pillow
 pandas
-matplotlib.pyplot
-sklearn.linear_model 
-sklearn.model_selection 
-sklearn.metrics 
+matplotlib
+scikit-learn

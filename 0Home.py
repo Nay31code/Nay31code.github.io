@@ -10,8 +10,10 @@ st.set_page_config(
 #set background 
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
+        image = Image.open(f)
+        buffered = io.BytesIO()
+        image.save(buffered, format="JPEG")
+        return base64.b64encode(buffered.getvalue()).decode()
 
 def set_background(png_file):
     bin_str = get_base64(png_file)

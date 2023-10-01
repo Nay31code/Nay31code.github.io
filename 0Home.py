@@ -1,9 +1,6 @@
 import streamlit as st
 from PIL import Image
 import base64
-import os
-print(os.getcwd())
-
 #set icon 
 st.set_page_config(
     page_title="Waste water predictor",
@@ -28,7 +25,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True) 
 
-image_path = 'C:\\Users\\A_R_T\\Desktop\\Projec ed\\bg.JPG'
+image_path = 'C:\\Users\\A_R_T\\Desktop\\Projec ed\\bg.jpg'
 
 
 
